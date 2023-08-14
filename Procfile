@@ -1,0 +1,1 @@
+web: gunicorn kurly_cake_kreations.wsgi
