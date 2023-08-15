@@ -28,6 +28,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
+
+# Cloudinary configuration URL
+CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -46,7 +51,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "cloudinary_storgae",
+    "cloudinary_storage",
     "django.contrib.staticfiles",
     "cloudinary",
     "reviews",
