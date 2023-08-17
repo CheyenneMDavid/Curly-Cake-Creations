@@ -39,7 +39,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "kurly-cake-kreations-aacf1c9f6647.herokuapp.com",
     "localhost",
-    "8000-cheyennemda-kurlycakekr-60rwfpade90.ws-eu103.gitpod.io",
+    "8000-cheyennemda-kurlycakekr-60rwfpade90.ws-eu104.gitpod.io",
 ]
 
 
@@ -55,6 +55,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     "reviews",
+    "accounts",
+    "cakes",
+    "orders",
 ]
 
 MIDDLEWARE = [
