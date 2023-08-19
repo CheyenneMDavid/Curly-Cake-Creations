@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "reviews",
     "accounts",
     "cakes",
+    "django_summernote",
     "orders",
 ]
 

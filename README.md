@@ -22,21 +22,25 @@ ___
 - [Credits, Acknowledgments and Appreciation-to](#credits-acknowledgments-and-appreciation-to)
 
 ___
+___
 
 ## Features
+
+- ### Admin Panel
+
+    The Admin Panel has general control of the Kurly-Cakes-Kreation reviews page, and the use of a full featured editor by way of Summernote.  This allows the admin to creat posts with more styls and better presented content, without the admin having to know and html.
 
 ___
 
 ## Project Planning & Development
 
-### Apps required in project
-
-Table for planning "Reviews" database models
-![Reviews Tables Model](static/assets_readme/reviews-table.png)
+- ### Apps required in project
 
 - Cakes
 - Orders
 - Reviews
+    Table for planning "Reviews" database models.
+![Reviews Tables Model](static/assets_readme/reviews-table.png)
 
 ___
 
