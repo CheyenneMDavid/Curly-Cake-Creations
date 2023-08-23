@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "django.contrib.sites",
     "cloudinary_storage",
     "django.contrib.staticfiles",
     "cloudinary",
@@ -64,6 +65,9 @@ INSTALLED_APPS = [
     "cakes",
 ]
 
+SITE_ID = 1
+
+# Configure email verification for user accounts.
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
 MIDDLEWARE = [
