@@ -8,7 +8,7 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
-class Review(models.Model):
+class Reviews(models.Model):
     # Ensure that the maximum character length of a title is kept to 100
     # and setting unique to "True", ensures that
     title = models.CharField(max_length=100)
@@ -22,7 +22,7 @@ class Review(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
-        User, related_name="review_like", blank=True
+        User, related_name="reviews_like", blank=True
     )
 
     class Meta:

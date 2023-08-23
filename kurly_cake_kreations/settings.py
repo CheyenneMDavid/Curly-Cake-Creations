@@ -36,6 +36,7 @@ CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Lists the allowed hosts.
 ALLOWED_HOSTS = [
     "kurly-cake-kreations-aacf1c9f6647.herokuapp.com",
     "localhost",
@@ -43,8 +44,7 @@ ALLOWED_HOSTS = [
 ]
 
 
-# Application definition
-
+# Lists applicatations in the project.
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -54,12 +54,17 @@ INSTALLED_APPS = [
     "cloudinary_storage",
     "django.contrib.staticfiles",
     "cloudinary",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "django_summernote",
+    "orders",
     "reviews",
     "accounts",
     "cakes",
-    "django_summernote",
-    "orders",
 ]
+
+ACCOUNT_EMAIL_VERIFICATION = "none"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
